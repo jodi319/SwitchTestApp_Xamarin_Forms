@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwitchTestApp.Favourites">
+    <!--<ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin Forms!" />
+        </StackLayout>
+    </ContentPage.Content>-->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="Top Left" Grid.Row="0" Grid.Column="0" />
+        <Switch Toggled="isOn1" HorizontalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1"/>
+        <Label Text="Top Right" Grid.Row="1" Grid.Column="0" />
+        <Switch Toggled="Switch2_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="1" Grid.Column="1"/>
+        <Label Text="Bottom Left" Grid.Row="2" Grid.Column="0" />
+        <Switch Toggled="Switch3_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="2" Grid.Column="1"/>
+        <Label Text="Bottom Right" Grid.Row="3" Grid.Column="0" />
+        <Switch Toggled="Switch4_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="3" Grid.Column="1"/>
+
+        <Label Text="Top Left" Grid.Row="4" Grid.Column="0" />
+        <Switch Toggled="Switch5_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="4" Grid.Column="1"/>
+        <Label Text="Top Right" Grid.Row="5" Grid.Column="0" />
+        <Switch Toggled="Switch6_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="5" Grid.Column="1"/>
+        <Label Text="Bottom Left" Grid.Row="6" Grid.Column="0" />
+        <Switch Toggled="Switch7_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="6" Grid.Column="1"/>
+        <Label Text="Bottom Right" Grid.Row="7" Grid.Column="0" />
+        <Switch Toggled="Switch8_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="7" Grid.Column="1"/>
+
+        <Label Text="Top Left" Grid.Row="8" Grid.Column="0" />
+        <Switch Toggled="Switch9_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="8" Grid.Column="1"/>
+        <Label Text="Top Right" Grid.Row="9" Grid.Column="0" />
+        <Switch Toggled="Switch10_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="9" Grid.Column="1"/>
+        <Label Text="Bottom Left" Grid.Row="10" Grid.Column="0" />
+        <Switch Toggled="Switch11_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="10" Grid.Column="1"/>
+        <Label Text="Bottom Right" Grid.Row="11" Grid.Column="0" />
+        <Switch Toggled="Switch12_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="11" Grid.Column="1"/>
+    </Grid>
+
+</ContentPage>
