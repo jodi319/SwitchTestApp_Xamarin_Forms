@@ -15,7 +15,7 @@ namespace SwitchTestApp
         public Favourites(bool isOn1, bool isOn2, bool isOn3)
         {
             isOn1 = true;
-            isOn2 = false;
+            isOn2 = true;
             isOn3 = true;
         }
 
