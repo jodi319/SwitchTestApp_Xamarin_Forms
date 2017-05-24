@@ -12,17 +12,33 @@ namespace SwitchTestApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Favourites : ContentPage
     {
-        public bool isOn { get; set; }
+        public Favourites(bool isOn1, bool isOn2, bool isOn3)
+        {
+            isOn1 = true;
+            isOn2 = false;
+            isOn3 = true;
+        }
+
+        public bool isOn1 { get; set; }
+        public bool isOn2 { get; set; }
+        public bool isOn3 { get; set; }
         public Favourites()
         {
             InitializeComponent();
         }
 
-        void isOn1(object sender, ToggledEventArgs e)
-        {
-            //lbldisp.Text = "Switch Status is " + e.Value.ToString();
-            DisplayAlert("Alert", "Switch Status is " + e.Value.ToString(), "OK");
-        }
+        //protected override void OnAppearing()
+        //{
+        //    isOn1 = true;
+        //    isOn2 = false;
+        //    isOn3 = true;
+        //}
+            
+        //void isOn1(object sender, ToggledEventArgs e)
+        //{
+        //    //lbldisp.Text = "Switch Status is " + e.Value.ToString();
+        //    DisplayAlert("Alert", "Switch Status is " + e.Value.ToString(), "OK");
+        //}
 
         private void Switch2_OnToggled(object sender, ToggledEventArgs e)
         {

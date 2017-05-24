@@ -28,11 +28,11 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Label Text="Top Left" Grid.Row="0" Grid.Column="0" />
-        <Switch Toggled="isOn1" HorizontalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1"/>
+        <Switch IsToggled="{Binding isOn1}" HorizontalOptions="EndAndExpand" Grid.Row="0" Grid.Column="1"/>
         <Label Text="Top Right" Grid.Row="1" Grid.Column="0" />
-        <Switch Toggled="Switch2_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="1" Grid.Column="1"/>
+        <Switch IsToggled="{Binding isOn2}" HorizontalOptions="EndAndExpand" Grid.Row="1" Grid.Column="1"/>
         <Label Text="Bottom Left" Grid.Row="2" Grid.Column="0" />
-        <Switch Toggled="Switch3_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="2" Grid.Column="1"/>
+        <Switch IsToggled="{Binding isOn3}" HorizontalOptions="EndAndExpand" Grid.Row="2" Grid.Column="1"/>
         <Label Text="Bottom Right" Grid.Row="3" Grid.Column="0" />
         <Switch Toggled="Switch4_OnToggled" HorizontalOptions="EndAndExpand" Grid.Row="3" Grid.Column="1"/>
 
